@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+@prince = Artist.create!(name: 'Prince')
+@purple = @prince.songs.create!(title: 'Purple Rain', length: '342', play_count: 6345)
+@beret = @prince.songs.create!(title: 'Rasberry Beret', length: '762', play_count: 975)
+
+#Songs.destroy_all will remove all songs data same with Artist.destroy_all removes all artist data
